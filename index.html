@@ -69,7 +69,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: March 13, 2026</p>
+        <p class="updated">Last updated: April 6, 2026</p>
         <p class="nav"><a href="terms.html">Terms of Use &rarr;</a></p>
 
         <div class="section">
@@ -84,10 +84,9 @@
             <p>We collect the following categories of information:</p>
             <p><strong>INFORMATION YOU PROVIDE DIRECTLY:</strong></p>
             <ul>
-                <li>Email address (for account creation and authentication, or provided by Apple via Sign in with Apple)</li>
+                <li>Email address (for account creation and authentication)</li>
                 <li>Display name (publicly visible to other users)</li>
-                <li>Password (encrypted via Firebase Authentication — not applicable if you use Sign in with Apple)</li>
-                <li>Apple ID credentials (if you sign in with Apple — we receive only a unique identifier, your name if you choose to share it, and a relay email address)</li>
+                <li>Password (encrypted via Firebase Authentication — we never store plaintext passwords)</li>
                 <li>User-generated vote content (custom vote questions you create)</li>
                 <li>Friend connections (users you add as friends)</li>
             </ul>
@@ -105,7 +104,7 @@
             <ul>
                 <li>Your real name (unless you choose it as your display name)</li>
                 <li>Your precise or approximate location</li>
-                <li>Your contacts or address book (the "Find Friends" feature uses on-device hashing only — contact data never leaves your device)</li>
+                <li>Your full contacts or address book — the "Find Friends" feature extracts only email addresses from your contacts and checks them against our user database. No contact names, phone numbers, or other data are transmitted. Email addresses are used solely for matching and are not stored on our servers.</li>
                 <li>Your payment information (handled entirely by Apple)</li>
                 <li>Photos, camera, or microphone data</li>
                 <li>Browsing history or data from other apps</li>
@@ -160,10 +159,9 @@
             <p>We share your information with the following third-party services, solely for the purposes described:</p>
             <ul>
                 <li>Firebase (Google LLC): Authentication, database storage, cloud functions, and analytics. Google's privacy policy: https://policies.google.com/privacy</li>
-                <li>Apple (Sign in with Apple): Authentication — we receive a unique identifier, your name (if shared), and a relay email. Apple's privacy policy: https://www.apple.com/privacy</li>
+                <li>Apple (StoreKit): In-app purchase and subscription processing. Apple's privacy policy: https://www.apple.com/privacy</li>
                 <li>OpenAI: Automated content moderation for user-created vote questions. Only the text content of your votes is sent — no personal identifiers. OpenAI's privacy policy: https://openai.com/privacy</li>
-                <li>Apple (StoreKit): In-app purchase processing. We do not receive or store your payment details.</li>
-                <li>Unity Ads: Advertising display (where applicable). Unity's privacy policy: https://unity.com/legal/privacy-policy</li>
+                <li>Google AdMob: Advertising display (banner, interstitial, and rewarded video ads). AdMob may collect device identifiers and ad interaction data. Google's privacy policy: https://policies.google.com/privacy</li>
             </ul>
             <p><strong>WE DO NOT:</strong></p>
             <ul>
@@ -218,7 +216,18 @@
         </div>
 
         <div class="section">
-            <h2>9. Push Notifications</h2>
+            <h2>9. Subscriptions &amp; Purchase Data</h2>
+            <p>If you subscribe to VoteVerse VIP or make in-app purchases, the following applies:</p>
+            <ul>
+                <li>All payment processing is handled by Apple through the App Store. We do not collect or store your payment information (credit card, billing address, etc.).</li>
+                <li>We receive and store: your subscription status (active/expired), purchase history (product IDs), and transaction identifiers for verification purposes.</li>
+                <li>VIP subscriptions auto-renew weekly at the current price until canceled. You can manage or cancel subscriptions in your Apple ID settings at any time.</li>
+                <li>Subscription status is synced to our servers to unlock premium features (ad removal, friend games, weekly gem rewards).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>10. Push Notifications</h2>
             <p>VoteVerse uses local and/or push notifications to inform you about:</p>
             <ul>
                 <li>Voting results and round activity</li>
@@ -236,19 +245,20 @@
         </div>
 
         <div class="section">
-            <h2>10. Cookies &amp; Tracking</h2>
-            <p>VoteVerse does not use cookies (it is a native iOS app, not a website). We do not use cross-app tracking, advertising identifiers (IDFA), or fingerprinting techniques to track you across other apps or websites.</p>
+            <h2>11. Cookies &amp; Tracking</h2>
+            <p>VoteVerse does not use cookies (it is a native iOS app, not a website). We do not use fingerprinting techniques to track you across other apps or websites.</p>
+            <p>Google AdMob, our advertising partner, may collect device identifiers and ad interaction data to serve ads. AdMob does not use the Apple IDFA without your consent (as controlled by iOS App Tracking Transparency). You can limit ad tracking in iOS Settings > Privacy & Security > Tracking.</p>
             <p>Firebase may collect certain analytics data as part of its standard service. You can learn more about Firebase's data practices at https://firebase.google.com/support/privacy.</p>
         </div>
 
         <div class="section">
-            <h2>11. International Data Transfers</h2>
+            <h2>12. International Data Transfers</h2>
             <p>Your data is stored and processed in the United States via Google Firebase. If you are located outside the United States, your data will be transferred to and processed in the United States.</p>
             <p>By using VoteVerse, you consent to the transfer of your data to the United States. We rely on standard contractual clauses, adequacy decisions, and other appropriate safeguards as required by applicable law to ensure your data is protected during international transfers.</p>
         </div>
 
         <div class="section">
-            <h2>12. Changes to This Privacy Policy</h2>
+            <h2>13. Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
             <p>We will notify you of material changes by:</p>
             <ul>
@@ -259,7 +269,7 @@
         </div>
 
         <div class="section">
-            <h2>13. Contact Us</h2>
+            <h2>14. Contact Us</h2>
             <p>If you have any questions, concerns, complaints, or requests regarding this Privacy Policy or your personal data, please contact us at:</p>
             <p>Email: liamsapps.suport@gmail.com<br>Website: https://voteverse.app</p>
             <p>We will make reasonable efforts to respond to your inquiry within 30 days.</p>
